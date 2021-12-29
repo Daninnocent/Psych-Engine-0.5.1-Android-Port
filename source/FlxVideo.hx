@@ -56,7 +56,7 @@ class FlxVideo extends FlxBasic {
 
 		WebView.onClose = onClose;
 		WebView.onURLChanging = onURLChanging;
-		WebView.open(androidPath + name, false, null, ['http://exitme(.*)']);
+		WebView.open(Main.getDataPath() + androidPath + name, false, null, ['http://exitme(.*)']);
 
 		#elseif desktop
 		// by Polybius, check out PolyEngine! https://github.com/polybiusproxy/PolyEngine
